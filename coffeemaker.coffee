@@ -16,7 +16,7 @@ class CoffeeMaker
     @coffeeMaker.transitionsFor['reset']   = cooking : 'ready',  dirty  : 'ready'
 
     @clock = new Timer
-      countdown     : 10
+      countdown     : 60 * 5
       callback      : -> self.stop()
 
   start               : () ->

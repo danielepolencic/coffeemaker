@@ -25,7 +25,6 @@ isDirty = (req, res, next) ->
 # app.use isDirty()
 
 app.get '/', isDirty, ( req, res ) ->
-  # res.send "Hello World #{JSON.stringify machine.status()} | #{JSON.stringify timer.status()}"
   res.render 'index', machine : machine.status(), timer : timer.status()
 
 app.get '/add', ( req, res ) ->
