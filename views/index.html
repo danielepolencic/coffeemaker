@@ -1,0 +1,16 @@
+<h2>CoffeeMaker</h2>
+<ul>
+  <li>State: <strong>{{machine.state}}</strong></li>
+  <li>Keep Warm: <strong>{{machine.timer.state}}</strong></li>
+  <li>Keep Warm for: <strong>{{machine.timer.countdown}}</strong> seconds</li>
+</ul>
+<h2>Timer</h2>
+<ul>
+  <li>Timer: <strong>{{timer.state}}</strong></li>
+  <li>Timer set to: <strong>{{timer.countdown}}</strong> seconds</li>
+</ul>
+<ul>
+  <li><a href="/add">Schedule a coffee</a></li>
+  <li><a href="/stop">Stop CoffeeMaker</a></li>
+  <li><a href="/reset">Reset</a></li>
+</ul>

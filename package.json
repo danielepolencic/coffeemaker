@@ -1,0 +1,15 @@
+{
+    "name": "coffeemaker"
+  , "description": "Coffeemaker"
+  , "version": "2.0.0"
+  , "private": true
+  , "author": "Daniele Polencic"
+  , "dependencies": {
+      "express"       : "*"
+    , "hbs"           : "*"
+    , "gpio"          : "*"
+    , "coffee-script" : "*"
+    , "picomachine"   : "*"
+    , "cron"          : "*"
+  }
+}
