@@ -14,7 +14,6 @@ app.use express.static( __dirname + '/public' )
 machine = new CoffeeMaker
 timer = new Timer
 
-# isDirty = () ->
 isDirty = (req, res, next) ->
   console.log "LOG: Middleware %o", machine.status().state
   if machine.status().state is 'dirty'
