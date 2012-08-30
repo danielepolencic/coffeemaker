@@ -24,7 +24,7 @@ isDirty = (req, res, next) ->
 
 # app.use isDirty()
 
-app.get '/', isDirty, ( req, res ) ->
+app.get '/', ( req, res ) ->
   res.render 'index', machine : machine.status(), timer : timer.status()
 
 app.get '/add', ( req, res ) ->
