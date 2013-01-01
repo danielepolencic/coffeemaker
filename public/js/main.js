@@ -30,4 +30,15 @@ $(document).ready(function() {
       }
     });
   });
+
+  $('#immediately').click(function(){
+    $.ajax({
+      url     : '/timer/1',
+      type    : 'POST',
+      success : function() {
+        alert('Yeah, coffee scheduled');
+        window.location.href = '/'
+      }
+    });
+  });
 });
